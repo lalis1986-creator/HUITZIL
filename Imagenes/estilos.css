@@ -1,0 +1,322 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #FDFBF7;        /* Fondo crema suave premium */
+    color: #000000;                   /* Texto negro oscuro */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+}
+
+header {
+    background-color: #003366;        /* Azul */
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 1.05rem;
+    color: #F3EFEA;
+    font-style: italic;
+}
+
+nav {
+    background-color: #8B4513;        /*cafe */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: block;
+    padding: 16px 22px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FCD34D;                   /* Amarillo cálido al pasar el cursor */
+    background-color: #6B1D2F;
+}
+
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner p {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0 0 0;
+    border-radius: 8px;
+    border-left: 5px solid #000000;   /* Detalle lateral en negro */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #6B1D2F;
+    border-bottom: 2px solid #D000000; /* Subrayado negro */
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+#desarrollo ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#desarrollo ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    font-size: 1rem;
+}
+
+#desarrollo ul li img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;               /* Foto circular de ingredientes */
+    border: 2px solid #EAE4DC;
+}
+
+.galeria-fichas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.tarjeta-ficha-img {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #EAE4DC;
+    box-shadow: 0 4px 12px rgba(45, 34, 30, 0.04);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.tarjeta-ficha-img h3 {
+    color: #6B1D2F;
+    font-size: 1.15rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #EAE4DC;
+    padding-bottom: 10px;
+}
+
+/* Ajuste directo para las imágenes fijas de las fichas tecnicas */
+.tarjeta-ficha-img img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    background-color: #FAF6F0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ECE7E1;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.producto {
+    background-color: white;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    border-top: 4px solid #D97706;
+    box-shadow: 0px 4px 15px rgba(107, 29, 47, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.producto h3 {
+    margin: 15px 0 8px 0;
+    color: #6B1D2F;
+}
+
+.producto p {
+    font-weight: 600;
+    color: #D97706;
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+table, th, td {
+    border: 1px solid #EAE4DC;
+}
+
+th {
+    background-color: #6B1D2F;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #FDFBF7;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.galeria img {
+    width: 230px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(45, 34, 30, 0.08);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #521321;
+    font-size: 0.9rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #D1C9BC;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #6B1D2F;
+    background-color: #FFFDFB;
+}
+
+button {
+    background-color: #D97706;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6B1D2F;
+}
+
+footer {
+    background-color: #2D221E;
+    color: #F3EFEA;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 40px;
+    border-top: 4px solid #6B1D2F;
+}
+
+footer p {
+    margin: 4px 0;
+}
